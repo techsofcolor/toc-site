@@ -1,33 +1,741 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Technologists of Color</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+    	
+        <title>Techonlogists of Color - Atlanta</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Technologists of Color - an organization dedicated to increasing African American participation in tech in Atlanta">
+        <meta name="author" content="themecube">
+        
+        <!-- viewport settings -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-  <div class="container-fluid">
-      <div class="row-fluid">
-          <div class="centering text-center">
-            <img src="images/ToC-logo-draft.png" class="centering text-center" alt="ToC - Technologists of Color" height="474" width="864"/>
-            <div style="font-size:1em">
-                Visit the meetup site at <a href="http://www.meetup.com/Technologists">www.meetup.com/Technologists</a>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/headhesive.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link id="main-style" rel="stylesheet" href="css/color/toc-orange.css"> <!-- Choose your color, green, blue, yellow, red, darkblue, purple -->
+
+
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+
+
+	</head>
+
+	<body>
+    
+    	<!-- PRELOADING -->
+        <div id="preload">
+        	<div class="preload">
+                <div class="loader">
+                    Loading...
+                </div>
+            </div>
+        </div> 
+        
+        <!-- NAVIGATION -->
+        <header class="banner">
+            <nav class="navbar navbar-custom" role="navigation">
+              <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+              <div class="container">
+                <div data-scroll-header class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="img/toc-long-logo.png" style="width:75%" alt="ToC Logo"></a>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="nav">
+                  <ul class="nav navbar-nav navbar-right nav-effect uppercase">
+                    <li><a data-scroll href="#about"><span data-hover="About">About</span></a></li>
+                    <li><a data-scroll href="#program"><span data-hover="programs">programs</span></a></li>
+                    <li><a data-scroll href="#stories"><span data-hover="events">events</span></a></li>
+                    <!--<li><a data-scroll href="#on-deck"><span data-hover="on deck">on deck</span></a></li>-->
+                    <li><a data-scroll href="http://www.meetup.com/Technologists" target="_blank"><span data-hover="meetup">meetup</span></a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div>
+            </nav>
+        </header>
+        
+        
+        <!-- TOP -->
+        <section id="top" data-stellar-background-ratio="0.5">
+            <div class="entry">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        	<h1 class="uppercase">Its Our Time</h1>
+                            <p class="lead uppercase">ToC strives to create a cohesive and thriving community <br/> of African Americans in technology.</p>
+                            
+                            <!--<a class="button button-big button-light" href="#">view more</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="showHere"></a>
+        </section>
+        
+
+        <!-- ABOUT US -->
+        <section id="about">
+        	<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="uppercase">about us</h2>
+                        <p class="lead uppercase">Our goal is to increase African American participation in tech in Atlanta</p>
+                    </div>
+                    
+                    <div class="col-lg-12">
+                        <img class="img-responsive" src="img/toc-about.jpg" alt="About ToC">
+                        <h3>All about community</h3>
+                        
+                        <div class="row">
+                        	<p class="lead col-lg-4">Established in 2012, the Technologists of color meetup group aims to vel leo nec, mollis tristique ante. Suspendisse sed cursus tellus. Etiam ut risus dui. Vestibulum nulla lectus, fringilla nec nibh id, viverra lacinia justo. Suspendisse malesuada nisl dolor, nec congue ante commodo eu.</p>
+                            
+                            <p class="lead col-lg-4">Etiam interdum ullamcorper arcu sit amet semper. In felis elit, viverra vel leo nec, mollis tristique ante. Suspendisse sed cursus tellus. Etiam ut risus dui. Vestibulum nulla lectus, fringilla nec nibh id, viverra lacinia justo. Suspendisse malesuada nisl dolor, nec congue ante commodo eu.</p>
+                            
+                            <p class="lead col-lg-4">Etiam interdum ullamcorper arcu sit amet semper. In felis elit, viverra vel leo nec, mollis tristique ante. Suspendisse sed cursus tellus. Etiam ut risus dui. Vestibulum nulla lectus, fringilla nec nibh id, viverra lacinia justo. Suspendisse malesuada nisl dolor, nec congue ante commodo eu.</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="services" class="col-lg-12">
+                    
+                        <div class="service">
+                            <i class="fa fa-3x fa-puzzle-piece"></i>
+                            <h3 class="uppercase">Connect</h3>
+                            <p>To build a strong and cohesive community of African American technologists we first bring together professionals, entrepreneurs and students alike.</p>
+                            <a class="button button-dark" href="#">read more</a>
+                        </div>
+                    
+                        <div class="service">
+                            <i class="fa fa-3x fa-bullhorn"></i>
+                            <h3 class="uppercase">Inform</h3>
+                            <p>In order to take advantage of the vast amount of opportunity in the technology industry, we help to make the community aware that these opportunities exist; so that it can move to meet the demand. </p>
+                            <a class="button button-dark" href="#">read more</a>
+                        </div>
+                    
+                        <div class="service">
+                            <i class="fa fa-3x fa-university"></i>
+                            <h3 class="uppercase">Teach</h3>
+                            <p>To help address the shortage for technology professionals, we help to create a pipeline of young technologists by training them on the technologies highest in demand. </p>
+                            <a class="button button-dark" href="#">read more</a>
+                        </div>
+                    
+                        <div class="service">
+                            <i class="fa fa-3x fa-cogs"></i>
+                            <h3 class="uppercase">Mobilize</h3>
+                            <p>We provide opportunities for technology professionals to reach back and contribute their expertise to the education of those looking to grow in the industry.</p>
+                            <a class="button button-dark" href="#">read more</a>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- PROGRAM -->
+        <section id="program">
+        	<div class="container">
+            	<div class="row">
+                	
+                    <div class="col-lg-12">
+                    	<h2 class="uppercase">Programs</h2>
+                    	<p class="lead uppercase">Our core programming focuses on connecting, informing and teaching.</p>
+                    </div>
+                    
+                    <!-- program slider -->
+                    <div class="col-lg-12 programs">
+                    
+                    	<!--program 1 -->
+                    	<div class="program">
+                        	<img class="img-responsive" src="img/meetups-program-icon-2.png" alt="Meetups">
+                            <div>
+                            	<div class="icon">
+                            		<i class="fa fa-3x fa-users"></i>
+                                </div>
+                            	<h3 class="uppercase">Meetups</h3>
+                                <p>Our meetups are designed to provide information on the latest trends in technology as well as to provide a forum
+                                    for discussing issues as it relates to African Americans in technology fields.</p>
+                                <!--<a class="button button-light popup-html" href="sample-program.html">read more</a>-->
+                            </div>
+                        </div>
+                    	
+                        <!--program 2 -->
+                    	<div class="program">
+                        	<img class="img-responsive" src="img/codeyourworld--program-icon-1.png" alt="Code Your World">
+                            <div>
+                            	<div class="icon">
+                            		<i class="fa fa-3x fa-code"></i>
+                                </div>
+                            	<h3 class="uppercase">Code Your World</h3>
+                                <p>A series of programming workshops for students from elementary to high school.  The workshops cover technologies such
+                                    as Arduino and the Internet of Things (IOT), mobile app and website development.</p>
+                                <!--<a class="button button-light popup-html" href="sample-program.html">read more</a>-->
+                            </div>
+                        </div>
+                    	
+                        <!--program 3 -->
+                    	<div class="program">
+                        	<img class="img-responsive" src="img/happyhour--program-icon-1.png" alt="ToC Happy Hour">
+                            <div>
+                            	<div class="icon">
+                            		<i class="fa fa-3x fa-beer"></i>
+                                </div>
+                            	<h3 class="uppercase">Happy Hours</h3>
+                                <p>The ToC Happy Hours provide an opportunity to meet tech professionals in a casual setting. It also
+                                    helps those interested in technology to get plugged in to what's happening in and around the tech scene.</p>
+                                <!--<a class="button button-light popup-html" href="sample-program.html">read more</a>-->
+                            </div>
+                        </div>
+                        
+                	</div>
+                        
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- MILESTONE -->
+        <div id="milestone">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-lg-8 col-lg-offset-2 text-center">
+                        <div class="row">
+                        
+                            <div class="fact col-xs-12 col-md-3 col-lg-3">
+                                <p class="timer" data-to="25" data-speed="10000"></p>
+                                <p>meetups</p>
+                                <i class="fa fa-2x fa-users"></i>
+                            </div>
+                            
+                            <div class="fact col-xs-12 col-md-3 col-lg-3">
+                                <p class="timer" data-to="653" data-speed="10000"></p>
+                                <p>members</p>
+                                <i class="fa fa-2x fa-child"></i>
+                            </div>
+                            
+                            <div class="fact col-xs-12 col-md-3 col-lg-3">
+                                <p class="timer" data-to="157" data-speed="10000"></p>
+                                <p>Students taught</p>
+                                <i class="fa fa-2x fa-graduation-cap"></i>
+                            </div>
+                            
+                            <div class="fact col-xs-12 col-md-3 col-lg-3">
+                                <p class="timer" data-to="1500" data-speed="10000"></p>
+                                <p>donation</p>
+                                <i class="fa fa-2x fa-usd"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALLERY -->
+        <div id="gallery" style="margin-bottom:80px;">
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/tech-social-activism-1.jpg"
+                   title="<h4>Technology + Social Activism</h4>November 19<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/tech-social-activism-1.jpg" alt="Technology + Social Activism">
+                    <div class="plus"></div>
+                </a>
             </div>
 
-          </div>
-      </div>
-  </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/think-mobile-1.jpg"
+                   title="<h4>Think Mobile</h4>July 24<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/think-mobile-1.jpg" alt="Think Mobile">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/health-it-1.jpg"
+                   title="<h4>The Health IT Opportunity</h4>October 3<sup>rd</sup> 2013">
+                    <img class="img-responsive" src="img/gallery/health-it-1.jpg" alt="The Health IT Opportunity">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/health-it-2.jpg"
+                   title="<h4>The Health IT Opportunity</h4>October 3<sup>rd</sup> 2013">
+                    <img class="img-responsive" src="img/gallery/health-it-2.jpg" alt="The Health IT Opportunity">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/state-of-it-1.jpg"
+                   title="<h4>The State of IT</h4>May 6<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/state-of-it-1.jpg" alt="The State of IT">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/state-of-it-2.jpg"
+                   title="<h4>The State of IT</h4>May 6<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/state-of-it-2.jpg" alt="The State of IT">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/lean-startup-1.jpg"
+                   title="<h4>The Lean Startup</h4>February 27<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/lean-startup-1.jpg" alt="The Lean Startup">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/lean-startup-2.jpg"
+                   title="<h4>The Lean Startup</h4>February 27<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/lean-startup-2.jpg" alt="The Lean Startup">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/lean-startup-3.jpg"
+                   title="<h4>The Lean Startup</h4>February 27<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/lean-startup-3.jpg" alt="The Lean Startup">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a class="image-link" href="img/gallery/lean-startup-4.jpg"
+                   title="<h4>The Lean Startup</h4>February 27<sup>th</sup> 2014">
+                    <img class="img-responsive" src="img/gallery/lean-startup-4.jpg" alt="The Lean Startup">
+                    <div class="plus"></div>
+                </a>
+            </div>
+
+
+        </div>
+
+
+        <!-- PAST EVENTS -->
+        <section id="stories">
+        	<div class="container">
+            	<div class="row">
+
+                    <div class="col-lg-12">
+                    	<h2 class="uppercase">Past Events</h2>
+                    	<p class="lead uppercase">Here's what we've been up to.</p>
+                    </div>
+
+                    <div class="col-lg-12 stories">
+
+                    	<div class="story">
+                        	<img class="img-responsive" src="img/default-past-event-icon.png" alt="App Showcase">
+                            <div>
+                            	<div class="icon">
+                            		<i class="fa fa-2x fa-users"></i>
+                                </div>
+                            	<h3 class="uppercase">App<br>Showcase</h3>
+                                <p>Entreprenuers present their app or startup concept and receive constructive feedback from the audience.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+
+                    	<div class="story">
+                        	<img class="img-responsive" src="img/holiday-social-past-event-icon.png" alt="ToC + BDPA Holiday Tech Social">
+                            <div>
+                            	<div class="icon">
+                            		<i class="fa fa-2x fa-beer"></i>
+                                </div>
+                            	<h3 class="uppercase">Toc + BDPA<br>Holiday Tech Social</h3>
+                                <p>Technologists gathered to enjoy food, spirits and music as we closed out the year.  This was the first joint event between ToC and BDPA.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+
+                    	<div class="story">
+                        	<img class="img-responsive" src="img/day-of-code-2014-past-event-icon.png" alt="Georgia Day of Code">
+                            <div>
+                            	<div class="icon">
+                            		<i class="fa fa-2x fa-code"></i>
+                                </div>
+                            	<h3 class="uppercase">Georgia<br>Day Of Code</h3>
+                                <p>150+ sixth-graders at Lindley Sixth Grade Academy were introduced to programming using the Code.org's Hour of Code Program.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+
+                    	<div class="story">
+                        	<img class="img-responsive" src="img/tech-social-activism-past-event-icon.png" alt="Technology + Social Activism">
+                            <div>
+                            	<div class="icon">
+                            		<i class="fa fa-2x fa-users"></i>
+                                </div>
+                            	<h3 class="uppercase">Technology<br> and Social Activism</h3>
+                                <p>This town hall style event was an open discussion that focused on technology's use to support “grass-roots” efforts to change the world.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="story">
+                            <img class="img-responsive" src="img/codeyourworld-110114-past-event-icon.png" alt="Code Your World With Arduino">
+                            <div>
+                                <div class="icon">
+                                    <i class="fa fa-2x fa-code"></i>
+                                </div>
+                                <h3 class="uppercase">Code Your World<br/>With Arduino</h3>
+                                <p>In this pilot workshop, students learned how they can use computers to interact with the physical world using the Arduino prototyping kit.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <img class="img-responsive" src="img/think-mobile-past-event-icon.png" alt="Think Mobile">
+                            <div>
+                                <div class="icon">
+                                    <i class="fa fa-2x fa-users"></i>
+                                </div>
+                                <h3 class="uppercase">Think<br/>Mobile</h3>
+                                <p>Attendees learned about mobile's growth in the market and discovered the primary areas that should be evaluated before taking the leap.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <img class="img-responsive" src="img/state-of-it-past-event-icon.png" alt="The State of IT">
+                            <div>
+                                <div class="icon">
+                                    <i class="fa fa-2x fa-users"></i>
+                                </div>
+                                <h3 class="uppercase">State<br/>of IT</h3>
+                                <p>Attendees learned about mobile's growth in the market and discovered the primary areas that should be evaluated before taking the leap.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <img class="img-responsive" src="img/lean-startup-past-event-icon.png" alt="The Lean Startup">
+                            <div>
+                                <div class="icon">
+                                    <i class="fa fa-2x fa-users"></i>
+                                </div>
+                                <h3 class="uppercase">The Lean<br/>Startup</h3>
+                                <p>Attendees learned about mobile's growth in the market and discovered the primary areas that should be evaluated before taking the leap.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <img class="img-responsive" src="img/health-it-past-event-icon.png" alt="The Health IT Opportunity">
+                            <div>
+                                <div class="icon">
+                                    <i class="fa fa-2x fa-users"></i>
+                                </div>
+                                <h3 class="uppercase">The Health IT<br/>Opportunity</h3>
+                                <p>Attendees learned about mobile's growth in the market and discovered the primary areas that should be evaluated before taking the leap.</p>
+                                <a class="button button-light popup-html" href="sample-story.html">read more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--<div class="col-lg-7">-->
+                    	<!--<div id="donate">-->
+                        	<!--<p class="lead uppercase">You’ve helped us raise a staggering</p>-->
+                            <!--<span class="pledged">$53.426</span>-->
+
+                            <!--<div class="progress">-->
+                            	<!--<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">-->
+                            		<!--<span class="sr-only">60% Complete</span>-->
+                            	<!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-lg-5 text-right">-->
+                    	<!--<p class="lead text-right">Pellentesque eu malesuada nisi. Phasellus eget ornare arcu, et condimentum arcu. Phasellus vitae posuere nisi, at venenatis velit. Morbi lacinia lacus non consectetur accumsan.</p>-->
+                        <!--<a class="button button-big button-dark popup-html" href="donate.html">donate</a>-->
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TOC ON-DECK -->
+        <section id="on-deck">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-lg-12">
+                    	<h2 class="uppercase">ToC On-Deck</h2>
+                        <p class="lead uppercase">Find out what events are coming to the Atlanta Tech Scene.</p>
+                    </div>
+
+                    <div class="col-lg-7">
+                    	<!--world map -->
+                    	<!--<div id="world-map"></div>-->
+                        <h3>ToC Events</h3>
+                        <!-- events slider -->
+                        <div id="toc-upcoming-events">
+                            <!-- event 1 -->
+                            <div class="event">
+                                <div class="event-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-3x fa-calendar"></i>
+                                    </div>
+
+                                    <div class="description">
+                                        <h3>State of Black Tech</h3>
+                                        <p>A town hall discussion on technology from the African American perspective.</p>
+                                        <span class="details"><i class="fa fa-lg fa-map-marker"></i> General Assembly - Ponce City Market</span>
+                                        <span class="details"><i class="fa fa-lg fa-clock-o"></i> Feb 26, 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- event 2 -->
+                            <div class="event">
+                                <div class="event-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-3x fa-calendar"></i>
+                                    </div>
+
+                                    <div class="description">
+                                        <h3>ToC Happy Hour - Sponsored by Diversant</h3>
+                                        <p>Join us at 5 Seasons Brewery Westside for beer, wine and great conversation. </p>
+                                        <span class="details"><i class="fa fa-lg fa-map-marker"></i> 5 Seasons Brewery Westside</span>
+                                        <span class="details"><i class="fa fa-lg fa-clock-o"></i> March 26, 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- event 3 -->
+                            <!--<div class="event">-->
+                                <!--<div class="event-inner">-->
+                                    <!--<div class="icon">-->
+                                        <!--<i class="fa fa-3x fa-calendar"></i>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="description">-->
+                                        <!--<h3>Code Your World with Arduino</h3>-->
+                                        <!--<p>An interactive programming workshop for middle school students using the Arduino prototyping kit</p>-->
+                                        <!--<span class="details"><i class="fa fa-lg fa-map-marker"></i> Year Up Atlanta</span>-->
+                                        <!--<span class="details"><i class="fa fa-lg fa-clock-o"></i> Mar 21, 2015</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5">
+                    	<!--<h3>See Where We Active</h3>-->
+                        <!--<p>Vivamus non libero aliquam, molestie metus ac, dapibus dolor. Suspendisse potenti. Fusce blandit lectus nunc, ac ornare est gravida at. Nulla pulvinar dapibus purus, a posuere elit sollicitudin nec. Aliquam vulputate quam sit amet vehicula accumsan. Maecenas imperdiet congue tellus, sit amet ornare risus condimentum sit amet. Etiam sit amet fermentum felis, tristique lacinia turpis. Nam ac arcu ut lacus tristique varius.<br>Fusce neque lacus, semper ut lobortis a, porttitor eu arcu. Curabitur placerat metus velit. Proin iaculis urna quis nisl luctus, at iaculis arcu malesuada. Aenean id consequat sem. Morbi vel cursus quam. Aenean at sodales neque. Nunc sagittis placerat eros, id vestibulum dui condimentum quis. Praesent ac tincidunt neque</p>-->
+
+                        <h3>Other Tech Events</h3>
+                        <!-- events slider -->
+                        <div id="upcoming-events">
+                            <!-- event 1 -->
+                            <div class="event">
+                                <div class="event-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-3x fa-calendar"></i>
+                                    </div>
+
+                                    <div class="description">
+                                        <h3>Goodie Hack</h3>
+                                        <p>An intense, high energy hackathon series for under-served communities.</p>
+                                        <span class="details"><i class="fa fa-lg fa-map-marker"></i> Google - Midtown</span>
+                                        <span class="details"><i class="fa fa-lg fa-clock-o"></i> Feb 27, 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- event 2 -->
+                            <!--<div class="event">-->
+                                <!--<div class="event-inner">-->
+                                    <!--<div class="icon">-->
+                                        <!--<i class="fa fa-3x fa-calendar"></i>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="description">-->
+                                        <!--<h3>Quisque velit felis</h3>-->
+                                        <!--<p>Fusce rhoncus et est sit amet adipiscing. Vivamus ut nulla libero. Aliquam erat volutpat.</p>-->
+                                        <!--<span class="details"><i class="fa fa-lg fa-map-marker"></i> Angola</span>-->
+                                        <!--<span class="details"><i class="fa fa-lg fa-clock-o"></i> Nov 02, 2014</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!-- event 3 -->
+                            <!--<div class="event">-->
+                                <!--<div class="event-inner">-->
+                                    <!--<div class="icon">-->
+                                        <!--<i class="fa fa-3x fa-calendar"></i>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="description">-->
+                                        <!--<h3>Proin at dignissim erat</h3>-->
+                                        <!--<p>Proin ornare enim quis odio posuere, non consectetur quam porta fringilla.</p>-->
+                                        <!--<span class="details"><i class="fa fa-lg fa-map-marker"></i> Sudan</span>-->
+                                        <!--<span class="details"><i class="fa fa-lg fa-clock-o"></i> Dec 18, 2014</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                        <br/><br/>
+                    </div>
+
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                    	<h3>Our Sponsors</h3>
+                        <div class="partners">
+                            <a href="http://www.nudaptix.com" target="_blank"><img class="img-responsive" src="img/nudaptix-sponsor-logo.png" alt="Nudaptix"></a>
+                            <a href="http://www.thoughtworks.com" target="_blank"><img class="img-responsive" src="img/thoughtworks-sponsor-logo.png" alt="ThoughtWorks"></a>
+                            <a href="http://www.diversant.com" target="_blank"><img class="img-responsive" src="img/diversant-sponsor-logo.png" alt="Diversant"></a>
+                            <a href="http://www.cisco.com" target="_blank"><img class="img-responsive" src="img/cisco-sponsor-logo.png" alt="Cisco"></a>
+                            <a href="http://www.polygonatl.com" target="_blank"><img class="img-responsive" src="img/polygon-sponsor-logo.png" alt="Polygon"></a>
+                            <!--<img class="img-responsive" src="img/logo6.png" alt="">-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+        	<div class="container">
+            	<div class="row">
+                	
+                	<div class="col-md-3 col-lg-3">
+                        <h3 class="uppercase">Social Media</h3>
+                        <p>Connect and stay connected with the ToC via social media</p>
+                        <div class="social">
+                            <a href="http://www.twitter.com/techsofcolor">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                            <a href="http://www.facebook.com/groups/technologistsofcolor">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                            <a href="https://plus.google.com/u/0/b/106449231677740053163/106449231677740053163/posts">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                    	</div>
+                    </div>
+                    
+                    <div class="col-md-3 col-lg-3">
+                    	<h3 class="uppercase">email</h3>
+                        
+                        <!--<div class="address">-->
+                        	<!--<div class="icon">-->
+                            	<!--<i class="fa fa-lg fa-home"></i>-->
+                            <!--</div>-->
+                            <!--<p>1721 Merry Rabbit Village, Broadview, New York, 14010 US</p>-->
+                        <!--</div>-->
+                        <!---->
+                        <!--<div class="address">-->
+                        	<!--<div class="icon">-->
+                            	<!--<i class="fa fa-lg fa-phone"></i>-->
+                            <!--</div>-->
+                            <!--<p>(917) 162-6930</p>-->
+                        <!--</div>-->
+
+                        <div class="address">
+                        	<div class="icon">
+                            	<i class="fa fa-lg fa-envelope"></i>
+                            </div>
+                            <p>info@techsofcolor.org</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <!-- SUBFOOTER -->
+        <div class="subfooter">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-lg-12">
+                    	<p class="pull-left">2015 &copy; Technologists of Color</p>
+                        
+                        <ul class="list-unstyled list-inline pull-right">
+                        	<li><a href="#about">About</a></li>
+                            <li><a href="#program">Programs</a></li>
+                            <li><a href="#stories">Events</a></li>
+                            <li><a href="http://www.meetup.com/Technologists" target="_blank">Meetup</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    
+		<!-- modernizr -->
+        <script src="js/modernizr.custom.js"></script>
+        
+    	<script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headhesive.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/retina-1.1.0.min.js"></script>
+        
+        
+        
+        <!-- map -->
+        <script src="js/map/d3.v3.min.js"></script>
+        <script src="js/map/topojson.v1.min.js"></script>
+		<script src="js/map/datamaps.world.min.js"></script>
+        
+        <script src="js/main.js"></script>
+        
+      	
+        <!-- GOOGLE ANALYTICS -->
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-XXXXXX-XX', 'yourdomain.com');  
+		  ga('send', 'pageview');
+		
+		</script> 
+        
+     
+        
+	</body>
 </html>
