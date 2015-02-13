@@ -303,13 +303,17 @@ figure.news-effect h3::after {
 /* FOOTER */
 
 footer {
-	color:#000000;
+	color:#ffffff;
     background:#bf4d24;
 	padding:55px 0;
 	
 	background-image: url(../../img/map-white.png);
     background-repeat: no-repeat;
     background-position: right top; 
+}
+
+footer h3 {
+    color:white;
 }
 
 
