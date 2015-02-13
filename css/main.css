@@ -1190,3 +1190,18 @@ select {
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
 }
+
+
+footer .meetup-logo-small {
+    width:15%;
+    margin-right:10px
+}
+
+a.meetup-logo-small {
+    display:inline;
+}
+
+a.meetup-logo-small img {
+    width:10%;
+    margin-right:4px
+}
