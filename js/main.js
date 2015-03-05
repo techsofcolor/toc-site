@@ -75,8 +75,36 @@ jQuery(document).ready(function($) {
 		  navigation : false,
 	  });
 	
+		//OWLCAROUSEL SERVICES
+	var owl = $("#connect-services");
+ 
+	  owl.owlCarousel({
+		  itemsCustom : [
+			[1200, 3]
+		  ],
+		  pagination : true,
+		  navigation : false,
+	  });
 	
 	//OWLCAROUSEL PROGRAM
+	
+	var owl = $(".connect-persona");
+ 
+	  owl.owlCarousel({
+		  itemsCustom : [
+			[0, 1],
+			[450, 1],
+			[600, 2],
+			[700, 2],
+			[1000, 3],
+			[1200, 3],
+			[1600, 3]
+		  ],
+		  pagination : true,
+		  navigation : false,
+	  });
+	  
+
 	var owl = $(".programs");
  
 	  owl.owlCarousel({

@@ -62,7 +62,7 @@ h3 {
 
 /* ABOUT */
 
-#about h2 {
+#about h2, #idea h2 {
 	color:#000000;
 }
 
@@ -90,7 +90,7 @@ h3 {
 
 /* PROGRAM */
 
-#program {
+#program, #potential {
 	background: 
     linear-gradient(
       rgba(191,77,36, 1.00),
@@ -108,7 +108,7 @@ h3 {
 	background:#ffffff;
 }
 
-#program .lead {
+#program .lead, #potential .lead {
 	color:#ffffff;
 }
 
@@ -416,4 +416,28 @@ footer a, footer a:hover {
 	
 .wrap .plus {
 	background: url(../../img/plus.png) no-repeat scroll center center / 60px 60px #222222;
+}
+
+/*CONNECT STYLING*/
+
+#spark{
+	color:#ffffff;
+	background:url(../../img/state-of-black-tech-past-event-icon.png) bottom center no-repeat;
+
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+}
+
+#journey {
+	color:#ffffff;
+	background:url(../../img/road_13.jpg) bottom center no-repeat;
+
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+}
+
+.text-overlay{
+	background-color: rgba(191, 77, 36, 0.7);
 }
