@@ -1205,3 +1205,56 @@ a.meetup-logo-small img {
     width:10%;
     margin-right:4px
 }
+
+div#project-code-program strong {
+    font-weight: bold;
+    color: dimgray;
+}
+
+.bread-container {
+    background: #F5F5F5;
+    border-bottom: 1px solid #eee;
+    min-height: 60px;
+}
+
+.breadcrumbs {
+    margin-top:20px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.right  .breadcrumbs {
+    text-align: right;
+}
+.breadcrumbs.left {
+    text-align: left;
+}
+.breadcrumbs a{
+    text-transform: uppercase;
+}
+
+span.bredcrumb-separator {
+    margin: 0 10px;
+}
+
+/* Techie's List */
+
+section#techlist {
+    padding:0px 0px 45px 0px;
+}
+
+ul.techlist {
+    list-style-type: none;
+}
+
+ul.techlist li span.date {
+    display: inline-block;
+    margin-left:8px;
+    font-size:.8em;
+    font-style:italic;
+
+}
+
+ul.techlist li {
+    padding-bottom:10px;
+}
+
