@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
 	
 	//OWLCAROUSEL SERVICES
 	var owl = $("#services");
- 
+
 	  owl.owlCarousel({
 		  itemsCustom : [
 			[0, 1],
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 			[1600, 4]
 		  ],
 		  pagination : true,
-		  navigation : false,
+		  navigation : false
 	  });
 	
 		//OWLCAROUSEL SERVICES
@@ -83,7 +83,7 @@ jQuery(document).ready(function($) {
 			[1200, 3]
 		  ],
 		  pagination : true,
-		  navigation : false,
+		  navigation : false
 	  });
 	
 	//OWLCAROUSEL PROGRAM
@@ -101,12 +101,12 @@ jQuery(document).ready(function($) {
 			[1600, 3]
 		  ],
 		  pagination : true,
-		  navigation : false,
+		  navigation : false
 	  });
 	  
 
 	var owl = $(".programs");
- 
+
 	  owl.owlCarousel({
 		  itemsCustom : [
 			[0, 1],
@@ -118,13 +118,13 @@ jQuery(document).ready(function($) {
 			[1600, 3]
 		  ],
 		  pagination : true,
-		  navigation : false,
+		  navigation : false
 	  });
 	  
 	  
 	//OWLCAROUSEL STORIES
 	var owl = $(".stories");
- 
+
 	  owl.owlCarousel({
 		  itemsCustom : [
 			[0, 1],
@@ -136,7 +136,7 @@ jQuery(document).ready(function($) {
 			[1600, 4]
 		  ],
 		  pagination : true,
-		  navigation : false,
+		  navigation : false
 	  });
 	
 	
@@ -235,8 +235,26 @@ jQuery(document).ready(function($) {
 //		  pagination : false,
 //		  navigation : false,
 //	  });
-	  
-	
+
+
+    //OWLCAROUSEL SPOTLIGHT
+    var owl_spotlight = $(".spotlight");
+
+    owl_spotlight.owlCarousel({
+        itemsCustom : [
+            [0, 1],
+            [450, 1],
+            [600, 2],
+            [700, 2],
+            [1000, 4],
+            [1200, 4],
+            [1600, 4]
+        ],
+        pagination : true,
+        navigation : false
+    });
+
+
 	//FIX HOVER EFFECT ON IOS DEVICES
 	document.addEventListener("touchstart", function(){}, true);
 	

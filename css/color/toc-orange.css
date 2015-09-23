@@ -441,3 +441,52 @@ footer a, footer a:hover {
 .text-overlay{
 	background-color: rgba(191, 77, 36, 0.7);
 }
+
+/* Techie's List */
+
+#techlist h2 {
+    color:#000000;
+}
+
+
+/* ToC Spotlight */
+
+#spotlight {
+    /*background:#bf4d24;*/
+    background:
+        linear-gradient(
+            rgba(191,77,36, 1.00),
+            rgba(191,77,36, 0.00)
+        ),
+        url(../../img/map-white.png);
+
+    /*background-image: url(../../img/map-white.png);*/
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#spotlight .lead {
+    color:#ffffff;
+}
+
+.spotlight-item {
+    background:#ffffff;
+}
+
+.spotlight-item .icon {
+    color:#ffffff;
+    background:#bf4d24;
+}
+
+#spotlight-detail {
+    background:#ffffff;
+}
+
+#spotlight-detail .icon {
+    color:#000000;
+    background:#bf4d24;
+}
+
+#spotlight-detail footer {
+    background:none;
+}

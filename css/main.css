@@ -408,7 +408,7 @@ header {
 }
 
 #stories .lead {
-	color:#000000;
+	color:#ffffff;
 }
 
 .stories {
@@ -1258,3 +1258,89 @@ ul.techlist li {
     padding-bottom:10px;
 }
 
+
+/* SPOTLIGHT */
+
+#spotlight {
+    background:#fac42b;
+    background-image: url(../img/map-black.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#spotlight .lead {
+    color:#ffffff;
+}
+
+.spotlight {
+    padding-left:0;
+    padding-right:0;
+}
+
+.spotlight .spotlight-item {
+    margin:0 15px 30px 15px;
+}
+
+.spotlight-item {
+    background:#ffffff;
+    margin-bottom:20px;
+}
+
+.spotlight-item h3 {
+    font-size:21px;
+}
+
+.spotlight-item div {
+    padding:15px;
+    position:relative;
+}
+
+.spotlight-item .icon {
+    color:#000000;
+    background:#fac42b;
+    padding:10px;
+    display:table;
+    position:absolute;
+    top:-25px;
+    right:15px;
+}
+
+.spotlight-item .button {
+    margin-bottom:0;
+}
+
+#spotlight-item-detail {
+    background:#ffffff;
+    position:relative;
+}
+
+#spotlight-item-detail header {
+    margin-bottom:10px;
+}
+
+#spotlight-item-detail .icon {
+    color:#000000;
+    background:#fac42b;
+    padding:10px;
+    margin-right:10px;
+    display:table;
+    float:left;
+}
+
+#spotlight-item-detail p {
+    margin-bottom:20px;
+}
+
+#spotlight-item-detail blockquote {
+    font-size:14.5px;
+}
+
+#spotlight-item-detail footer {
+    background:none;
+    padding:0;
+}
+
+#spotlight-item-detail .mfp-close {
+    color: #ffffff;
+    background:#000000;
+}
