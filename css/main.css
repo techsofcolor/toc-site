@@ -1238,7 +1238,7 @@ span.bredcrumb-separator {
 
 /* Techie's List */
 
-section#techlist {
+div.eventsPage section#techlist {
     padding:0px 0px 45px 0px;
 }
 

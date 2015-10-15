@@ -41,7 +41,12 @@
 
         <!-- viewport settings -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
+        </script>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -95,7 +100,7 @@
                     <li><a data-scroll href="#about"><span data-hover="About">About</span></a></li>
                     <li><a data-scroll href="#program"><span data-hover="programs">programs</span></a></li>
                     <li><a data-scroll href="#stories"><span data-hover="events">events</span></a></li>
-                    <li><a data-scroll href="techies-list.html"><span data-hover="techie&apos;s&nbsp;list">techie's list</span></a></li>
+                    <li><a data-scroll href="#techlist"><span data-hover="techie&apos;s&nbsp;list">techie's list</span></a></li>
                     <li><a data-scroll href="http://www.meetup.com/Technologists" target="_blank"><span data-hover="meetup">meetup</span></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -116,15 +121,6 @@
                 </div>
             </div>
             <a id="showHere"></a>
-            <!--<div id="slider1_container" style="display: none; position: relative; margin: 0 auto;-->
-        <!--top: 0px; left: 0px; width: 1350px; height: 700px; overflow: hidden;">-->
-                <!--<div>-->
-                    <!--<img u="image" src2="img/top-bg-1.jpg" />-->
-                <!--</div>-->
-                <!--<div>-->
-                    <!--<img u="image" src2="/img/20150226_192311_1920x700.jpg" />-->
-                <!--</div>-->
-            <!--</div>-->
         </section>
 
         <!-- ABOUT US -->
@@ -206,10 +202,6 @@
                             		<i class="fa fa-3x fa-users"></i>
                                 </div>
                             	<h3 class="uppercase">Meetups</h3>
-                                <!--<p>Our meetups are designed to provide information on the latest trends in technology as well as to provide a forum-->
-                                    <!--for discussing issues as it relates to African Americans in computer technology.  Topics include Healthcare IT,-->
-                                    <!--Mobile App Development, Technology and Social Activism and much more. <br/><a href="http://meetup.com/Technologists" target="_blank"> Join us</a> on-->
-                                    <!--<a class="meetup-logo-small" href="http://meetup.com/Technologists" target="_blank"><img src="img/meetup-logo-2x.png"/></a></p>-->
                                 <p>Our meetups are designed to provide information on the latest trends in technology as well as to provide a forum
                                     for discussing issues as it relates to African Americans in technology fields. <a href="http://meetup.com/Technologists" target="_blank"> Join us</a> on
                                     <a class="meetup-logo-small" href="http://meetup.com/Technologists" target="_blank"><img src="img/meetup-logo-2x.png"/></a></p>
@@ -224,13 +216,15 @@
                             	<div class="icon">
                             		<i class="fa fa-3x fa-code"></i>
                                 </div>
-                            	<!--<h3 class="uppercase">Project C.O.D.E.</h3>-->
-                                <!--<p>Our goal is to promote <strong>C</strong>hange through <strong>O</strong>utreach to make <strong>D</strong>evelopment available to-->
-                                    <!--<strong>E</strong>veryone.  Project C.O.D.E. is a series of programming workshops for students from elementary to high school.-->
-                                    <!--The workshops cover technologies such as Arduino, Javascript Programming, mobile app and website development.</p>-->
-                                <h3 class="uppercase">Code Your World</h3>
-                                <p>A series of programming workshops for students from elementary to high school.  The workshops cover technologies such
-                                    as Arduino and the Internet of Things (IOT), mobile app and website development.</p>
+                            	<h3 class="uppercase">Project C.O.D.E.</h3>
+                                <p>
+                                    <!--Our goal is to promote <strong>C</strong>hange through <strong>O</strong>utreach to make <strong>D</strong>evelopment available to-->
+                                    <!--<strong>E</strong>veryone.  -->
+                                    Project C.O.D.E. is a series of programming workshops for students from elementary to high school.
+                                    The workshops cover technologies such as Arduino, Javascript, mobile app and website development.</p>
+                                <!--<h3 class="uppercase">Code Your World</h3>-->
+                                <!--<p>A series of programming workshops for students from elementary to high school.  The workshops cover technologies such-->
+                                    <!--as Arduino and the Internet of Things (IOT), mobile app and website development.</p>-->
                             </div>
                         </div>
                     	
@@ -261,19 +255,19 @@
                         <div class="row">
                         
                             <div class="fact col-xs-12 col-md-3 col-lg-3">
-                                <p class="timer" data-to="32" data-speed="10000"></p>
+                                <p class="timer" data-to="33" data-speed="10000"></p>
                                 <p>meetups</p>
                                 <i class="fa fa-2x fa-users"></i>
                             </div>
                             
                             <div class="fact col-xs-12 col-md-3 col-lg-3">
-                                <p class="timer" data-to="984" data-speed="10000"></p>
+                                <p class="timer" data-to="1008" data-speed="10000"></p>
                                 <p>members</p>
                                 <i class="fa fa-2x fa-child"></i>
                             </div>
                             
                             <div class="fact col-xs-12 col-md-3 col-lg-3">
-                                <p class="timer" data-to="199" data-speed="10000"></p>
+                                <p class="timer" data-to="217" data-speed="10000"></p>
                                 <p>Students taught</p>
                                 <i class="fa fa-2x fa-graduation-cap"></i>
                             </div>
@@ -371,11 +365,9 @@
                     <div class="plus"></div>
                 </a>
             </div>
-
-
         </div>
 
-        <!-- PAST EVENTS -->
+        <!-- EVENTS -->
         <section id="stories">
         	<div class="container">
             	<div class="row">
@@ -388,28 +380,28 @@
                     <div class="col-lg-12 stories">
 
                         <div class="story">
-                            <img class="img-responsive" src="img/default-past-event-icon.png" alt="App Showcase">
+                            <img class="img-responsive" src="img/101015-tinkercad-event-icon.jpg" alt="Tinkercad and Kickstarter">
                             <div>
                                 <div class="icon">
                                     <i class="fa fa-2x fa-code"></i>
                                 </div>
-                                <h3 class="uppercase">Tinkercad and Kickstarter</h3>
+                                <h3 class="uppercase">Tinkercad and Kickstarter - Oct 10</h3>
                                 <p>Students 12-16 years old learn how to use the Tinkercad program to create 3D models of product ideas and learn how to crowdfund on Kickstarter.</p>
-                                <a class="button button-light " href="javascript:;">read more</a>
+                                <!--<a class="button button-light" href="javascript:;">read more</a>-->
                             </div>
                         </div>
 
 
                         <div class="story">
-                            <img class="img-responsive" src="img/default-past-event-icon.png" alt="App Showcase">
+                            <img class="img-responsive" src="img/082715-att-webrtc-event-icon.png" alt="AT&T WebRTC Workshop">
                             <div>
                                 <div class="icon">
                                     <i class="fa fa-2x fa-code"></i>
                                 </div>
-                                <h3 class="uppercase">AT&T WebRTC Workshop</h3>
+                                <h3 class="uppercase">AT&T WebRTC Workshop - Aug 27</h3>
                                 <p> A hands-on coding workshop at the AT&T Foundry Innocation Center taught by AT&T’s lead architect for their WebRTC service.
                                 </p>
-                                <a class="button button-light" href="javascript:;">read more</a>
+                                <!--<a class="button button-light" href="javascript:;">read more</a>-->
                             </div>
                         </div>
 
@@ -421,7 +413,7 @@
                                 </div>
                                 <h3 class="uppercase">Code Your <br/>World - May 2015</h3>
                                 <p>In this pilot workshop, students learned how they can use computers to interact with the physical world using the Arduino prototyping kit.</p>
-                                <a class="button button-light" href="javascript:;">read more</a>
+                                <!--<a class="button button-light" href="javascript:;">read more</a>-->
                             </div>
                         </div>
 
@@ -545,154 +537,25 @@
             </div>
         </section>
 
-        <!-- TOC ON-DECK -->
-        <!--<section id="on-deck">-->
-        	<!--<div class="container">-->
-            	<!--<div class="row">-->
-                	<!--<div class="col-lg-12">-->
-                    	<!--<h2 class="uppercase">ToC On-Deck</h2>-->
-                        <!--<p class="lead uppercase">Find out what events are coming to the Atlanta Tech Scene.</p>-->
-                    <!--</div>-->
-
-                    <!--<div class="col-lg-10">-->
-                        <!--&lt;!&ndash;<h3>Upcoming Events</h3>&ndash;&gt;-->
-                        <!--&lt;!&ndash; events slider &ndash;&gt;-->
-                        <!--<div id="toc-upcoming-events">-->
-
-                            <!--&lt;!&ndash; event &ndash;&gt;-->
-                            <!--<div class="event">-->
-                                <!--<div class="event-inner">-->
-                                    <!--<div class="icon">-->
-                                        <!--<i class="fa fa-3x fa-calendar"></i>-->
-                                    <!--</div>-->
-
-                                    <!--<div class="description">-->
-                                        <!--<h3>HackToC 1.0 - Tech Hackathon</h3>-->
-                                        <!--<p>We "ideated" last week on ToC Connect. Now we'll start coding an MVP for the ToC Connect platform.-->
-                                            <!--</br><a href="http://www.meetup.com/Technologists/events/221432655/" target="_blank" >RSVP on Meetup</a>-->
-                                        <!--</p>-->
-                                        <!--<span class="details"><i class="fa fa-lg fa-map-marker"></i> Counter Culture</span>-->
-                                        <!--<span class="details"><i class="fa fa-lg fa-clock-o"></i> May 2<sup>nd</sup> 2015  12pm - 5pm</span>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                            <!--&lt;!&ndash; event &ndash;&gt;-->
-                            <!--<div class="event">-->
-                                <!--<div class="event-inner">-->
-                                    <!--<div class="icon">-->
-                                        <!--<i class="fa fa-3x fa-calendar"></i>-->
-                                    <!--</div>-->
-                                    <!--<div class="description">-->
-                                        <!--<h3>Black Enterprise Pre-Entrepreneurs Summit Mixer</h3>-->
-                                        <!--<p>Black Enterprise is coming to Atlanta May 13th - 16th for their 20th Annual Entrepreneurs Summit. <br/>-->
-                                            <!--<a href="http://www.prebesummitmixer.com/" target="_blank" >Click here</a> to register</p>-->
-                                        <!--<span class="details"><i class="fa fa-lg fa-map-marker"></i> Opportunity Hub @ HJR (Northside Dr) </span>-->
-                                        <!--<span class="details"><i class="fa fa-lg fa-clock-o"></i> May 8th 7pm - 10pm</span>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-
-                            <!--&lt;!&ndash; event &ndash;&gt;-->
-                            <!--<div class="event">-->
-                                <!--<div class="event-inner">-->
-                                    <!--<div class="icon">-->
-                                        <!--<i class="fa fa-3x fa-calendar"></i>-->
-                                    <!--</div>-->
-
-                                    <!--<div class="description">-->
-                                        <!--<h3>Code Your World with Arduino</h3>-->
-                                        <!--<p>An interactive programming workshop for middle school students using the Arduino prototyping kit.<br/>-->
-                                            <!--<a href="http://toc-codeyourworld.eventbrite.com" target="_blank" >Register a Student</a>,-->
-                                            <!--<a href="http://www.meetup.com/Technologists/events/221433405/" target="_blank">Volunteer</a> or-->
-                                            <!--<a href="http://codeyourworld.techsofcolor.org/" target="_blank" >click here</a> for more info.-->
-                                        <!--</p>-->
-                                        <!--<span class="details"><i class="fa fa-lg fa-map-marker"></i> YearUp - Atlanta</span>-->
-                                        <!--<span class="details"><i class="fa fa-lg fa-clock-o"></i> May 9<sup>th</sup> 2015</span>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                        <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="col-lg-2">-->
-
-                    <!--</div>-->
-
-                    <!--&lt;!&ndash;<div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top:50px;">&ndash;&gt;-->
-                    	<!--&lt;!&ndash;<h3>Our Sponsors</h3>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<div class="partners">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a href="http://www.nudaptix.com" target="_blank"><img class="img-responsive" src="img/nudaptix-sponsor-logo.png" alt="Nudaptix"></a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a href="http://www.thoughtworks.com" target="_blank"><img class="img-responsive" src="img/thoughtworks-sponsor-logo.png" alt="ThoughtWorks"></a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a href="http://www.diversant.com" target="_blank"><img class="img-responsive" src="img/diversant-sponsor-logo.png" alt="Diversant"></a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a href="http://www.cisco.com" target="_blank"><img class="img-responsive" src="img/cisco-sponsor-logo.png" alt="Cisco"></a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a href="http://www.polygonatl.com" target="_blank"><img class="img-responsive" src="img/polygon-sponsor-logo.png" alt="Polygon"></a>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-
-        <!-- Spotlight -->
-        <!--<section id="spotlight">-->
-            <!--<div class="container">-->
-                <!--<div class="row">-->
-
-                    <!--<div class="col-lg-12">-->
-                        <!--<h2 class="uppercase">ToC Spotlight</h2>-->
-                        <!--<p class="lead uppercase">Notable individuals, organizations, and events in our community.</p>-->
-                    <!--</div>-->
-
-                    <!--<div class="col-lg-12 spotlight">-->
-
-                        <!--<div class="spotlight-item">-->
-                            <!--<img class="img-responsive" src="img/default-past-event-icon.png" alt="App Showcase">-->
-                            <!--<div>-->
-                                <!--<div class="icon">-->
-                                    <!--<i class="fa fa-2x fa-users"></i>-->
-                                <!--</div>-->
-                                <!--<h3 class="uppercase">Coke Scholars Hack</h3>-->
-                                <!--<p>Goodie Innovation: Coke Scholars Hack is a mashup of entrepreneurship, innovation, social good, and the highly-skilled Coca-Cola Scholar Alumni community. </p>-->
-                                <!--<a class="button button-light popup-html" href="state-of-black-tech-022615.htm">read more</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class="spotlight-item">-->
-                            <!--<img class="img-responsive" src="img/default-past-event-icon.png" alt="League Mobile">-->
-                            <!--<div>-->
-                                <!--<div class="icon">-->
-                                    <!--<i class="fa fa-2x fa-users"></i>-->
-                                <!--</div>-->
-                                <!--<h3 class="uppercase">League<br/>Mobile</h3>-->
-                                <!--<p>League Mobile Apps is where sports and mobile technology come to play. Our apps give players from amateur to pro the ability to rate their peers on the five fundamental skills of each given sport </p>-->
-                                <!--<a class="button button-light popup-html" href="app-showcase.htm">read more</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class="spotlight-item">-->
-                            <!--<img class="img-responsive" src="img/default-past-event-icon.png" alt="Brother Tech">-->
-                            <!--<div>-->
-                                <!--<div class="icon">-->
-                                    <!--<i class="fa fa-2x fa-beer"></i>-->
-                                <!--</div>-->
-                                <!--<h3 class="uppercase">Brother Tech<br/>Personal Tech Guru</h3>-->
-                                <!--<p>Technologists gathered to enjoy food, spirits and music as we closed out the year.  This was the first joint event between ToC and BDPA.</p>-->
-                                <!--<a class="button button-light popup-html" href="holiday-social-dec-2014.htm">read more</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
+        <!-- Techie's List -->
+        <section id="techlist">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="uppercase">Techie's List</h2>
+                        <p class="lead uppercase">A simple community-driven list of tech events and opportunities. </p>
+                    </div>
+                    <div id="techies-list-feed" class="col-lg-12">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Sponsors -->
         <section id="sponsors">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top:50px;">
+                    <div class="col-lg-8 col-lg-offset-2 text-center" >
                         <h3>Our Sponsors</h3>
                         <div class="partners">
                             <a href="http://www.nudaptix.com" target="_blank"><img class="img-responsive" src="img/nudaptix-sponsor-logo.png" alt="Nudaptix"></a>
@@ -776,9 +639,7 @@
                 </div>
             </div>
         </div>
-        
 
-    
 		<!-- modernizr -->
         <script src="js/modernizr.custom.js"></script>
         
@@ -791,80 +652,48 @@
         <script src="js/jquery.stellar.min.js"></script>
         <script src="js/smooth-scroll.js"></script>
         <script src="js/retina-1.1.0.min.js"></script>
-        
-        
-        
-        <!-- map -->
-        <script src="js/map/d3.v3.min.js"></script>
-        <script src="js/map/topojson.v1.min.js"></script>
-		<script src="js/map/datamaps.world.min.js"></script>
-        
+        <script src="js/jquery-dateFormat.min.js"></script>
         <script src="js/main.js"></script>
 
-        <!--<script type="text/javascript" src="js/jssor.slider.mini.js"></script>-->
-        <!--<script>-->
-            <!--jQuery(document).ready(function ($) {-->
+        <script type="text/javascript">
 
-                <!--var options = {-->
-                    <!--$FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0-->
-                    <!--$AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false-->
-                    <!--$AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000-->
-                    <!--$PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1-->
+            var feedcontainer=document.getElementById("techies-list-feed")
+            var feedurl="http://www.techsofcolor.org/qcms/feed/?feed=tl"
+            var feedlimit=50
+            var rssoutput='<ul class="techlist fa-ul">'
+            var maxEvents=8
 
-                    <!--$ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false-->
-                    <!--$SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad-->
-                    <!--$SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500-->
-                    <!--$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20-->
-                    <!--//$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container-->
-                    <!--//$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container-->
-                    <!--$SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0-->
-                    <!--$DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1-->
-                    <!--$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.-->
-                    <!--$UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).-->
-                    <!--$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1-->
-                    <!--$DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)-->
+            function rssfeedsetup(){
+                var feedpointer=new google.feeds.Feed(feedurl) //Google Feed API method
+                feedpointer.setNumEntries(feedlimit) //Google Feed API method
+                feedpointer.load(displayfeed) //Google Feed API method
+            }
 
-                    <!--$BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not-->
-                        <!--$Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance-->
-                        <!--$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always-->
-                        <!--$AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0-->
-                        <!--$Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1-->
-                        <!--$Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1-->
-                        <!--$SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0-->
-                        <!--$SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0-->
-                        <!--$Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1-->
-                        <!--$Scale: false                                   //Scales bullets navigator or not while slider scale-->
-                    <!--},-->
+            function displayfeed(result){
+                if (!result.error){
+                    var thefeeds=result.feed.entries
 
-                    <!--$ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not-->
-                        <!--$Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance-->
-                        <!--$ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always-->
-                        <!--$AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0-->
-                        <!--$Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1-->
-                    <!--}-->
-                <!--};-->
+                    for (var i=0; i<maxEvents; i++) {
+                        var pubDate = jQuery.format.prettyDate(new Date(thefeeds[i].publishedDate))
+                        rssoutput+="<li><i class='fa-li fa fa-star'></i><a href='" + thefeeds[i].link + "' target='_blank'><span class='title'>" + thefeeds[i].title + "</span></a><span class='date' alt='Date Listed'>(Added " + pubDate + ")</span></li>"
+                    }
+                    rssoutput+="</ul>"
 
-                <!--//Make the element 'slider1_container' visible before initialize jssor slider.-->
-                <!--$("#slider1_container").css("display", "block");-->
-                <!--var jssor_slider1 = new $JssorSlider$("slider1_container", options);-->
+                    if (thefeeds.length > 1) {
+                        rssoutput+="<p><a href='techies-list.html' target='_self' class='button button-light'>Read more</a></p>"
+                    }
+                    feedcontainer.innerHTML=rssoutput
+                }
+                else
+                    alert("Error fetching feeds!")
+            }
 
-                <!--//responsive code begin-->
-                <!--//you can remove responsive code if you don't want the slider scales while window resizes-->
-                <!--function ScaleSlider() {-->
-                    <!--var bodyWidth = document.body.clientWidth;-->
-                    <!--if (bodyWidth)-->
-                        <!--jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));-->
-                    <!--else-->
-                        <!--window.setTimeout(ScaleSlider, 30);-->
-                <!--}-->
-                <!--ScaleSlider();-->
+            window.onload=function(){
+                rssfeedsetup()
+            }
 
-                <!--$(window).bind("load", ScaleSlider);-->
-                <!--$(window).bind("resize", ScaleSlider);-->
-                <!--$(window).bind("orientationchange", ScaleSlider);-->
-                <!--//responsive code end-->
-            <!--});-->
-        <!--</script>-->
+        </script>
+
         <!-- GOOGLE ANALYTICS -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
