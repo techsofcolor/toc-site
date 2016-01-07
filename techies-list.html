@@ -44,9 +44,6 @@
 
         <!-- Scripts -->
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-        <script type="text/javascript">
-            google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
-        </script>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -251,35 +248,25 @@
 
         <script type="text/javascript">
 
-            var feedcontainer=document.getElementById("techies-list-feed")
-            var feedurl="http://www.techsofcolor.org/qcms/feed/?feed=tl"
-            var feedlimit=50
-            var rssoutput='<ul class="techlist fa-ul">'
+            // Get event list from db
+            $.getJSON( "techListService.php?q=10", function( data ) {
+                var items = [];
 
-            function rssfeedsetup(){
-                var feedpointer=new google.feeds.Feed(feedurl) //Google Feed API method
-                feedpointer.setNumEntries(feedlimit) //Google Feed API method
-                feedpointer.load(displayfeed) //Google Feed API method
-            }
+                $.each( data, function( key, val ) {
+                    var pubDate = jQuery.format.prettyDate(new Date(val.post_date))
+                    items.push("<li><i class='fa-li fa fa-star'></i><a href='" + val.url + "' target='_blank'><span class='title'>" + val.post_title + "</span></a><span class='date' alt='Date Listed'>(Added " + pubDate + ")</span></li>");
+                });
 
-            function displayfeed(result){
-                if (!result.error){
-                    var thefeeds=result.feed.entries
+                $( "<ul/>", {
+                    "class": "techlist fa-ul",
+                    html: items.join( "" )
+                }).appendTo( "#techies-list-feed" );
 
-                    for (var i=0; i<thefeeds.length; i++) {
-                        var pubDate = jQuery.format.prettyDate(new Date(thefeeds[i].publishedDate))
-                        rssoutput+="<li><i class='fa-li fa fa-star'></i><a href='" + thefeeds[i].link + "' target='_blank'><span class='title'>" + thefeeds[i].title + "</span></a><span class='date' alt='Date Listed'>(Added " + pubDate + ")</span></li>"
-                    }
-                    rssoutput+="</ul>"
-                    feedcontainer.innerHTML=rssoutput
+                if (data.length > 5) {
+                    $( "<p><a href='techies-list.html' target='_self' class='button button-light'>Read more</a></p>" ).appendTo("#techies-list-feed");
                 }
-                else
-                    alert("Error fetching feeds!")
-            }
 
-            window.onload=function(){
-                rssfeedsetup()
-            }
+            });
 
         </script>
 
